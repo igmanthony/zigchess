@@ -8,4 +8,4 @@ No external libraries were used for this program. The only parts of the standard
 
 Right now this program doesn't do much except calculate moves. It's almost perfect but there are still 1 or two small bugs at larger perft depths on unusual positions (see the perfts.zig file) that I haven't figured out (perft 8 on the standard position works fine).
 
-This engine gives comparable results to the shakmaty engine (~300 ms for perft 6 and ~15 s for perft 7 from the starting chess position on a reasonably-good i7-based computer). The binary produced using Zig v. 7.1(ish) with -Drelease-fast is 140 kb in size!
+This program gives comparable results to the shakmaty move generator when I compared them (again, on 2/17/2021 with ~300 ms for perft 6 and ~15 s for perft 7 from the starting chess position on a reasonably-good i7-based computer). The binary produced using Zig v. 7.1(ish) with -Drelease-fast is 140 kb in size!
