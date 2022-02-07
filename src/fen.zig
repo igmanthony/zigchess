@@ -98,7 +98,7 @@ pub fn parseBigNumber(fen: []const u8) !usize {
         multiplier *= 10;
     }
     var num: usize = 0;
-    for (fen) |c, i| {
+    for (fen) |c| {
         multiplier /= 10;
         num += switch (c) {
             '0'...'9' => (c - '0') * multiplier,

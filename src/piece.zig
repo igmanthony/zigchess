@@ -1,7 +1,7 @@
 const color = @import("color.zig");
 const Color = color.Color;
 
-pub const PieceType = packed enum(u3) {
+pub const PieceType = enum(u3) {
     pawn,
     knight,
     bishop,

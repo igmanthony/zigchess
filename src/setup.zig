@@ -47,7 +47,6 @@ const CarryRippler = struct {
 
     fn next(self: *CarryRippler) ?Bitboard {
         if ((self.subset != 0) or self.initial) {
-            const sub = self.subset;
             self.*.initial = false;
             self.*.subset = (self.subset -% self.mask) & self.mask; // Carry-Rippler expression
             return Bitboard{ .bits = self.subset };
